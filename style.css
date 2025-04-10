@@ -1,0 +1,176 @@
+/* Global Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: "Underdog", system-ui;
+    color: white;
+}
+
+/* Scrolling Banner */
+
+.scroll-container{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    overflow: hidden;
+    border-bottom: 1px solid;
+    position: fixed;
+    background-color: black;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+    gap: 4em;
+}
+
+.scroll p {
+    color: rgb(255, 246, 74);
+
+}
+
+.LeftToRight {
+    animation: LeftToRight 10s infinite linear;
+
+}
+
+@keyframes LeftToRight {
+    from {
+        transform: translateX(-24%);
+    }
+    to {
+        transform: translateX(1%);
+    }
+}
+
+
+/* Header */
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 250px;
+    padding-bottom: 60px;
+   
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(224, 57, 93);
+}
+
+/* Descriptions */
+
+.intro {
+    margin: 0px 0px 60px 60px;
+    text-align: left;
+}
+
+.intro a {
+    color:rgb(255, 246, 74);
+}
+
+
+/* Gallery */
+
+.gallery1 img {
+    display: block;
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+    
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    margin: 20px 0px;
+    
+}
+
+.description-container p {
+    margin: 80px 60px;
+    float: left;
+}
+
+
+/* Button */
+
+.button-container {
+    display:flex;
+    justify-content: center;
+}
+
+button {
+    margin: 30px 0 60px 0;
+    background-color:  black;
+    color: white;
+    border: none;
+    padding: 10px;
+
+}
+
+#btn1, #btn2  {
+    margin-right: 20px;
+}
+
+/* Footer */
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+footer {
+    background-color: rgb(224, 57, 93);
+    height: 200px;
+    font-family: arial;
+    padding: 20px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    
+
+}
+
+footer a {
+    color: white;
+}
+
+#link1 {
+    margin-bottom: 10px;
+}
+
+@media only screen and (900px > width) {
+
+    .gallery1 img {
+        display: block;
+        width: 100%;
+        margin: 20px 0px;
+    
+    }
+
+ 
+}
